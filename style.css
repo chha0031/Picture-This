@@ -30,11 +30,32 @@ h4 {
 }
 
 img {
+  width: 100%;
+  height: auto;
   display: block;
 }
 
 @media (min-width: 960px) {
   .header {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.image-container {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+@media (min-width: 961px) {
+  .image-container {
+    max-width: 960px;
+    margin: auto
   }
 }
